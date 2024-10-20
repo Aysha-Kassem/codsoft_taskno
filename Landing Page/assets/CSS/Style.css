@@ -1,0 +1,106 @@
+/* for all */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* header */
+header{
+    background-color: #F5F8F9;
+    height: 100vh;
+    text-align: center;
+}
+/* nav */
+nav{
+    display: grid;
+    gap: 5px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 10px 0px;
+    font-size: small;
+}
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+nav .links {
+    display: none;
+    gap: 20px;
+}
+nav #close {display: none;}
+nav button{
+    background-color: #0B363C;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: x-small;
+    border: none;
+}
+#list{
+    background-color: #F5F8F9;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    border-top: solid 1px;
+    padding: 30px;
+}
+/* text in header */
+.header{
+    padding: 10%;
+    gap: 10px;
+    display: grid;
+}
+.header button{
+    background-color: #0B363C;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+/* section 1 */
+.section1{
+    background-color: #0B363C;
+    height: 100vh;
+}
+
+/* section 2 */
+.section2{
+    background-color: #F5F8F9;
+    height: 100vh;
+}
+
+/* section 3 */
+.section3{
+    background-color: #0B363C;
+    height: 100vh;
+}
+
+/* section 4 */
+/* section 5 */
+
+
+@media screen and (min-width: 767px) {
+    nav #open{ display: none;}
+    nav .links {display: flex;}
+    .navbar{padding: 30px 0px;}
+    
+}

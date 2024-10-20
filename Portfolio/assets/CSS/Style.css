@@ -1,0 +1,219 @@
+/* all page */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f2f2f2;
+    display: grid;
+    gap: 30px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{color: #1d1c1c;}
+p{color: #3d3838;}
+button{
+    background-color: #1d1c1c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: #3c3636;
+}
+
+/* home page */
+/* navebar */
+.navbar{
+    background-color: black;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    color: white !important;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.links{
+    display: none;
+    gap: 30px;
+}
+.links a:hover, .links a:focus, #list a:hover, #list a:focus{
+    color: #a79d9d;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+#list {
+    background-color: black;
+    color: white;
+    display: none;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: large;
+}
+#open_list{
+    cursor: pointer;
+}
+#close_list{
+    display: none;
+    cursor: pointer;
+}
+
+/* header */
+.header{
+    padding: 10%;
+    display: grid;
+    gap: 20px;
+}
+.text_header{
+    display: grid;
+    gap: 10px;
+}
+
+
+/* about me */
+#About{
+    padding: 10%;
+    display: grid;
+    gap: 50px;
+}
+#About h2{padding-bottom: 10px;}
+#About a{
+    color: #1d1c1c;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Services */
+#Services{
+    padding: 10%;
+    display: grid;
+    gap: 50px;
+}
+
+/* projects */
+.boxs{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.project_box{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    display: grid;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 2dvh;
+}
+.project_text{
+    text-align: center;
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+}
+.project_text h3{
+    color: #1d1c1c;
+    font-size: medium;
+}
+.project_text p, .project_links{
+    color: #3d3838;
+    font-size: smaller;
+}
+.project_links{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contact */
+#Contact{
+    padding: 10%;
+    display: grid;
+    gap: 10px;
+}
+
+
+/* footer */
+footer{
+    background-color: black;
+    color: white !important;
+    padding: 10px 10%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-size: 12px;
+}
+.social_media{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 768px){
+    /* navebar */
+    .navbar{
+        justify-content: space-around;
+        padding: 15px;
+        font-size: larger;
+    }
+    .links{display: flex;}
+    #open_list{display: none;}
+    #list{display: none;}
+
+    /* header */
+    .header{
+        padding: 5%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        align-items: center;
+    }
+    .header h2{font-size: xx-large;}
+    .header p{font-size: larger;}
+    .header img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .text_header button{
+        margin-top: 50px;
+        font-size: medium;
+    }
+
+    /* about me */
+    #About{
+        padding: 5%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        align-items: start;
+    }
+
+    /* footer */
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .social_media{font-size: medium;}
+}
