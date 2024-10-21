@@ -18,9 +18,9 @@ body {
 /* header */
 header{
     background-color: #F5F8F9;
-    height: 100vh;
     text-align: center;
 }
+
 /* nav */
 nav{
     display: grid;
@@ -34,7 +34,7 @@ nav{
     padding: 10px 0px;
     font-size: small;
 }
-nav .logo{
+.logo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,11 +62,12 @@ nav button{
     border-top: solid 1px;
     padding: 30px;
 }
+
 /* text in header */
 .header{
     padding: 10%;
     gap: 10px;
-    display: grid;
+    display: grid; 
 }
 .header button{
     background-color: #0B363C;
@@ -75,32 +76,177 @@ nav button{
     color: white;
     border: none;
 }
+.header .boxs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: end;
+    gap: 10px;
+}
+.text_box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.header .boxs p{font-size: xx-small;}
 
+/* main */
 /* section 1 */
 .section1{
     background-color: #0B363C;
-    height: 100vh;
+    color: white;
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
 }
+.section1>div:first-child{text-align: center;}
+.section1>div:first-child h2{font-size: large;}
+.section1>div:first-child p{font-size: x-small;}
+.section1 .boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+.section1 .boxs{
+    display: grid;
+    gap: 10px;
+    background-color: #0e2a526e;
+    padding: 20px;
+    border-radius: 10px;
+}
+.section1 .boxs div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section1 .boxs div:last-of-type{
+    display: grid;
+    gap: 5px;
+}
+.section1 .boxs p{font-size: small;}
+.section1 .boxs p{font-size: xx-small;}
 
 /* section 2 */
 .section2{
-    background-color: #F5F8F9;
-    height: 100vh;
+    background-color: #FFFFFF;
+    padding: 50px;
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+.section2>div:first-child{
+    display: grid;
+    gap: 10px;
+}
+.section2 button{
+    background-color: #78d276;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: black;
+    border: none;
+}
+
+
 
 /* section 3 */
 .section3{
     background-color: #0B363C;
-    height: 100vh;
+    color: white;
+    padding: 70px 50px;
+    display: grid;
+    gap: 20px;
+    text-align: center;
+}
+.section3 h2{font-size: large;}
+.section3 p{font-size: small; color: #c0c0c0;}
+.section3 button{
+    background-color: #78d476;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: black;
+    border: none;
+    width: 200px;
 }
 
-/* section 4 */
-/* section 5 */
+/* footer */
+footer{
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    font-size: x-small;
+}
+footer p {font-size: xx-small;}
+footer>div:first-child{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: start;
+    gap: 20px;
+    
+}
+footer>div:first-child>div{
+    display: grid;
+    gap: 5px;
+}
+footer>div:first-child>div>div{
+    display: grid;
+    gap: 2px;
+}
+footer>div:last-child div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer>div:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
 
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 769px) {
     nav #open{ display: none;}
     nav .links {display: flex;}
     .navbar{padding: 30px 0px;}
     
+    .header .boxs h4{font-size: x-large;}
+    .header .boxs p{font-size: medium;}
+
+
+    /* section 1 */
+    .section1{gap: 20px;};
+    .section1 .boxes{gap: 100px;}
+    .section1 .boxs{gap: 50px;}
+    .section1 .boxs p{font-size: large;}
+    .section1 .boxs p{font-size: small;}
+    .section1>div:first-child h2{font-size: x-large;}
+    .section1>div:first-child p{font-size: medium;}
+
+
+    /* section 2 */
+    .section2>div:first-child{gap: 20px;}
+    .section2 h2{font-size: xx-large}
+    .section2 p{font-size: large}
+
+
+    /* section 3 */
+    .section3{padding: 100px 50px;}
+    .section3 h2{font-size: xx-large;}
+    .section3 p{font-size: large;}
+
+    /* footer */
+    footer{font-size: medium;}
+    footer p {font-size: small;}
+
 }

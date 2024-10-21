@@ -20,3 +20,12 @@ document.getElementById("list").addEventListener("click", (event) => {
         document.getElementById("close_list").style.display = "none";
     }
 });
+
+
+// button to up
+document.getElementById("up").onclick = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
